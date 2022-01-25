@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* --------------------- card css ------------------------ */
+
+.container{
+    font-size:18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr 1fr;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 20px;
+
+    max-width: 300px;
+    max-height: 550px;
+    margin: 1rem;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0rem 1rem 3rem 1rem #102038;
+
+}
+
+.image{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem;
+    height: 89%;
+    position: relative;
+    border-radius: 22px;   
+}
+
+.equilibrium_img{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;    
+    overflow: hidden;
+    max-width: 280px;
+    z-index: 6;
+}
+
+.image:hover{
+    background-color: white;
+}
+
+
+.view_img{
+    position: absolute;
+    top: 40%;
+    z-index: 5;
+    /* display: none; */
+}
+
+
+.equilibrium_img:hover{
+    cursor: pointer;
+    opacity: .5;
+    z-index: 1;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr 1fr;
+    margin: 0px 1rem;
+}
+
+section div{
+    margin: .3rem 0rem;
+}
+
+.heading{
+    grid-column: 1/-1;
+}
+.heading span{
+    font-size: 1.5rem !important;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+
+span{
+    
+    color: hsl(215, 51%, 70%);
+}   
+
+
+.para{
+    grid-column: 1/-1;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+}
+
+.list img{
+    margin-right: .2rem;
+}
+
+p{
+    color: white;
+}
+
+footer div{
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 1rem 0px;
+}
+
+footer div p{
+    cursor: pointer;
+}
+
+footer div img{
+    margin-right: .5rem;
+    border: 1px solid hsl(178, 100%, 50%);
+    border-radius:50% ;
+}
+

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: ;
+}
+
+
+.container{
+  min-width: 100px;
+  max-width: 350px;
+  /* width: 350px; */
+  margin: 0px 1rem;
+  max-height: 80vh;
+  min-height: 500px;
+  height: 550px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr .1fr 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0rem 0rem 1rem 0rem #0000004d;
+}
+
+.container div{
+  padding: 0px 2rem;
+  margin: .5rem;
+}
+
+.header{
+  margin: 0px 0px 1rem 0px !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+.section-1{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.section-2{
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  margin: 0rem 0px ;
+}
+
+.section-3{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  font-weight: 700;
+  width: 100%;
+}
+
+.section-3 div{
+  padding: 0px;
+}
+
+.section-3 div:nth-child(2){
+  text-align: left;
+}
+
+.change-color{
+  color: hsl(224, 23%, 55%);
+}
+
+
+.section-3 div:nth-child(3) a{
+  color:hsl(245, 75%, 52%);
+  font-size: small;
+}
+
+.section-3 div:nth-child(3) a:hover{
+  color: hsl(245, 83%, 68%);
+  text-decoration: none;
+}
+
+
+
+button{
+  background-color:   hsl(245, 75%, 52%);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-size: .8rem;
+  padding: 1rem 3rem;
+}
+
+button:hover{
+  background-color: hsl(245, 83%, 68%);
+}
+
+.section-5 a{
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 600;
+}
+
+.section-5 a:hover{
+  color:  hsl(223, 47%, 23%);
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (max-width:380px) {
+  html{
+    font-size: 14px;
+  }
+
+  body{
+    background-image: none;
+  }
+  
+  .container div{
+    padding: 0px .5rem;
+    margin: .5rem;
+  }
+
+  .container{
+    height: 40vh;
+  }
+
+}
+
+@media only screen and (max-width:480px) {
+  body{
+    background-image: none;
+  }
+
+}
